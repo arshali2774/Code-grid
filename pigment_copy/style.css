@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open {
+  width: 100px;
+  height: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+}
+
+.open:hover {
+  box-shadow: inset 2px 2px 20px 1px rgba(33, 33, 33, 0.5);
+}
+
+.lines {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+.color {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Para {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  background: #000;
+  padding: 1rem 0;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.5s ease-in-out;
+}
+.black .Para {
+  background: #fff;
+  color: #000;
+}
+.color:hover .Para {
+  transform: translateY(0);
+  opacity: 1;
+}
+.black {
+  background: #000;
+}
+.red {
+  background: red;
+}
+.orange {
+  background: orange;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: blue;
+}
+.indigo {
+  background: indigo;
+}
+.violet {
+  background: violet;
+}
